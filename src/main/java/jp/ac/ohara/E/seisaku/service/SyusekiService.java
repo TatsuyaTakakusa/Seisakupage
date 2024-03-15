@@ -36,7 +36,11 @@ public class  SyusekiService{
         SyusekiHyou syuseki = this.repository.findById(index).orElse(new SyusekiHyou());
         return syuseki;
     }
+    
+    
 
+
+    
     public void save(@NonNull SyusekiHyou syuseki) {
         this.repository.save(syuseki);
     }

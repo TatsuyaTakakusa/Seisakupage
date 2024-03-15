@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>セキュリティサンプル</title>
+<title>Login_page</title>
 </head>
 <body>
     <div class="container">
@@ -16,6 +16,7 @@
                     <form method="post" th:action="@{/login/}" th:object="${gakuseihyou}">
                         <fieldset>
                             <legend> ログイン </legend>
+                            <h3>学生番号:0000000</h3><h3>パスワード:0000</h3><h2>↑これで仮登録できるよ↑</h2><h3>一度学生情報を入力したらその情報を入力してね</h3>
                             <div class="form-group">
                                 <label for="inputStudentnumber">学生番号:</label> <input type="text"
                                     id="studentnumber" class="form-control" placeholder="学籍番号"
@@ -32,11 +33,6 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="text-center">
-                <a href="register_user.html" th:href="@{/register}">ユーザ登録はこちら</a>
             </div>
         </div>
     </div>

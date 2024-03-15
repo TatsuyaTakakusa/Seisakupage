@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -86,12 +85,7 @@ public class MainController {
 		// TODO: model.addAttributeに一覧取得結果を追加
 		return "hyouji";
 	}
-   @GetMapping("/ditail/{id}")
-  	public ModelAndView detail(@PathVariable(name = "id") Long id, GakuseiHyou gakuseihyou, ModelAndView model) {
-  		model.addObject("gakuseihyou",this.gakuseiService.get(id));
-  		model.setViewName("ditail");
-  		return model;
-  	}
+
  
   
   @PostMapping("/gakuseihyou/")

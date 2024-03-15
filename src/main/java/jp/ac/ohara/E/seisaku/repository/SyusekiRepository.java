@@ -7,5 +7,5 @@ import jp.ac.ohara.E.seisaku.model.SyusekiHyou;
 
 @Repository
 public interface SyusekiRepository  extends JpaRepository<SyusekiHyou, Long>{
-
+	public SyusekiHyou findByStudentnumber(String studentnumber);
 }

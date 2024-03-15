@@ -34,7 +34,7 @@ public class SecurityConfig {
 		JdbcUserDetailsManager jdbcManager = new JdbcUserDetailsManager(this.dataSource);
 
 		// TODO: あとで削除
-//		this.userRepository.saveAndFlush(this.makeUser("2347056", "髙草達也", "19", "fko2347056@stu.o-hara.ac.jp","08057438298", "1234"));
+		//this.userRepository.saveAndFlush(this.makeUser("0000000", "0000", "19", "fko2347000@stu.o-hara.ac.jp","00000000000", "0000"));
 
 		return jdbcManager;
 	}

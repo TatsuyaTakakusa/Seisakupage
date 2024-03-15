@@ -22,6 +22,9 @@ public class GakuseiHyou implements UserDetails{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
 	private long id;
+
+	
+
 	
 	@Column(length = 64, nullable = false)
 	private String studentnumber;
@@ -92,11 +95,12 @@ public class GakuseiHyou implements UserDetails{
 		// TODO 自動生成されたメソッド・スタブ
 		return this.password;
 	}
+	
 
 	
-	
-	
 	}
+
+
     
 
 

@@ -37,6 +37,7 @@ public class  SeisekiService{
         return seiseki;
     }
 
+
     public void save(@NonNull SeisekiHyou seiseki) {
         this.repository.save(seiseki);
     }
@@ -48,4 +49,5 @@ public class  SeisekiService{
     public void delete(@NonNull Long index) {
         this.repository.deleteById(index);
     }
+    
 }
